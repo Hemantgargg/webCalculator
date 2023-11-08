@@ -1,0 +1,175 @@
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Layout design */
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgb(50, 100, 150), rgb(250, 200, 150));
+}
+header {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: -3px 1px #ffffff;
+}
+
+.calci {
+  display: block;
+  /* border: 2px solid red; */
+  min-height: 70vh;
+  min-width: 30vw;
+  max-width: 525px;
+  margin: 10px auto;
+}
+.display {
+  background: hsla(218, 85%, 10%, 0.5);
+  border-top-right-radius: 40px;
+  border-top-left-radius: 10px;
+  color: white;
+  font-size: 45px;
+  margin: 10px 10px;
+  min-height: 10vh;
+  border: 2px solid rgb(33, 36, 35);
+}
+
+.keyContainer {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 40px;
+  background: hsla(218, 85%, 10%, 0.5);
+  margin: 10px 10px;
+  min-height: 10vh;
+  border: 2px solid rgb(33, 36, 35);
+  /* border: 2px solid red; */
+}
+.keypad {
+  display: grid;
+  margin: 10px 10px;
+  height: 55vh;
+  gap: 15px;
+  grid-template: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr / 1fr 1fr 1fr 1fr;
+  max-height: 600px;
+  max-width: 450px;
+  padding: 15px;
+  /* background: hsla(173, 100%, 59%, 0.4); */
+}
+button {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 20px;
+  font-size: 1.5em;
+  transition-duration: 0.9s;
+}
+
+button:hover {
+  background-color: #9578cae7;
+  color: rgb(255, 255, 255);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 420px), screen and (max-height: 420px) {
+  .display {
+    font-size: 7.5vmin;
+  }
+}
+
+/* positioning of keys */
+
+.equals-btn {
+  grid-row: 5;
+  grid-column: 4;
+  background-color: rgb(96, 155, 155);
+}
+.dot-btn {
+  grid-row: 5;
+  grid-column: 3;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.zero-btn {
+  grid-row: 5;
+  grid-column: 2;
+}
+.nine-btn {
+  grid-row: 5;
+  grid-column: 1;
+}
+.eight-btn {
+  grid-row: 4;
+  grid-column: 3;
+}
+.seven-btn {
+  grid-row: 4;
+  grid-column: 2;
+}
+.six-btn {
+  grid-row: 4;
+  grid-column: 1;
+}
+.five-btn {
+  grid-row: 3;
+  grid-column: 3;
+}
+.four-btn {
+  grid-row: 3;
+  grid-column: 2;
+}
+.three-btn {
+  grid-row: 3;
+  grid-column: 1;
+}
+.two-btn {
+  grid-row: 2;
+  grid-column: 3;
+}
+.one-btn {
+  grid-row: 2;
+  grid-column: 2;
+}
+.dbzero-btn {
+  grid-row: 2;
+  grid-column: 1;
+}
+.plus-btn {
+  grid-row: 4;
+  grid-column: 4;
+}
+.minus-btn {
+  grid-row: 3;
+  grid-column: 4;
+}
+.times-btn {
+  grid-row: 2;
+  grid-column: 4;
+}
+.divide-btn {
+  grid-row: 1;
+  grid-column: 4;
+  font-size: 2rem;
+}
+.clear-btn {
+  grid-row: 1;
+  grid-column: 1;
+  background-color: rgba(255, 255, 255, 0.945);
+  color: rgb(255, 0, 0);
+  font-size: 1.5em;
+}
+.del-btn {
+  grid-row: 1;
+  grid-column: 2;
+  background-color: rgba(241, 156, 28, 0.973);
+  color: black;
+  font-size: 1.5em;
+}
+.pos-neg-btn {
+  grid-row: 1;
+  grid-column: 3;
+}
